@@ -1,0 +1,6 @@
+{
+	"description": "Dynamic plugin for IRCTC E-tickets shows ticket 4h before journey starts and auto hides 30 min after journey ends NOTE - A app-password is required for your account look here https://youtu.be/RhWOkgUM2sI?si=GR9cswH28e_X2UMj always double check all links",
+	"download_url": "https://github.com/meilluer/SmartSpacer-IRCTC-Ticket/releases/download/V1.0/app-release.apk",
+	"version_code": 1,
+	"screenshots": ["https://raw.githubusercontent.com/meilluer/SmartSpacer-IRCTC-Ticket/main/image.png"]
+}
