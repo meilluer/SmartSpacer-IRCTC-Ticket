@@ -29,10 +29,7 @@ class Target: SmartspacerTargetProvider() {
         val seatDisplayText = if (TicketRepository.seatType.isNotEmpty()) "${TicketRepository.coachNumber}, ${TicketRepository.seatNumber} (${TicketRepository.seatType})" else "${TicketRepository.coachNumber}, ${TicketRepository.seatNumber}"
 
         val targets = mutableListOf<SmartspaceTarget>()
-        if(
-        targets.add(target_visibility_flag==false){
-            return  emptyList()
-        }
+      
             TargetTemplate.Basic(
                 id = "IRCTC_ticket",
                 componentName = ComponentName(context!!, Target::class.java),
@@ -42,6 +39,10 @@ class Target: SmartspacerTargetProvider() {
 
             ).create()
         )
+          if(
+        targets.add( TicketRepository.target_visibility_flag==false){
+            return  emptyList()
+        }
         
         return targets
     }
