@@ -9,7 +9,7 @@ import org.jsoup.Jsoup
 class IrctcParser(private val apiKey: String) {
 
     private val generativeModel = GenerativeModel(
-        modelName = "gemini-2.5-flash",
+        modelName = "gemini-3.5-flash",
         apiKey = apiKey,
         generationConfig = generationConfig {
             responseMimeType = "application/json"
